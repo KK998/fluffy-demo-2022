@@ -1,0 +1,52 @@
+{
+    "auth": [
+        {
+            "clientToken": "9123dcbb0b42652b0e105956c68d3ca2ff34584f324fa41a29aedd32b883e131"
+        }
+    ],
+    "orders": [
+        {
+            "omsId": "1",
+            "products": [
+                {
+                    "gtin": "0123456789",
+                    "quantity": 2,
+                    "serialNumberType": "SELF_MADE",
+                    "serialNumbers": [
+                        "XT6c84e",
+                        "2kY39Om"
+                    ],
+                    "templateId": 3
+                }
+            ],
+            "orderDetails": {
+                "factoryId": 1,
+                "factoryCountry": "Slovenia",
+                "productionLineId": "L01",
+                "productCode": "1",
+                "productDescription": "Placeholder"
+            }
+        },
+        {
+            "omsId": "2",
+            "products": [
+                {
+                    "gtin": "123456789110",
+                    "quantity": 1,
+                    "serialNumberType": "SELF_MADE",
+                    "serialNumbers": [
+                        "XT6c84e"
+                    ],
+                    "templateId": 3
+                }
+            ],
+            "orderDetails": {
+                "factoryId": 1,
+                "factoryCountry": "Slovenia",
+                "productionLineId": "L01",
+                "productCode": "1",
+                "productDescription": "Placeholder"
+            }
+        }
+    ]
+}

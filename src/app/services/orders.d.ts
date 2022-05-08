@@ -10,10 +10,10 @@ export interface OrderDetails {
     factoryId: number
     factoryName?: string
     factoryAddress?: string
-    factoryCountry?: string
-    productionLineId?: string
-    productCode?: string
-    productDescription?: string
+    factoryCountry: string
+    productionLineId: string
+    productCode: string
+    productDescription: string
     poNumber?: string
     expectedStartDate?: string
 }

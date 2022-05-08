@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "cfxkUJCh03JXbk9N+QMPs8zMejR+vFkLqQBJql1/GgfgAVEidw3sbc61KmoSee3aOJtB2497cd2r+t5+NCL1fg==",
+  "success": true,
+  "projectFilePath": "/home/kk998/Apps/angular/oms/api/oms/oms.csproj",
+  "expectedPackageFiles": [
+    "/home/kk998/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/kk998/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/kk998/.nuget/packages/swashbuckle.aspnetcore/6.2.3/swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "/home/kk998/.nuget/packages/swashbuckle.aspnetcore.swagger/6.2.3/swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "/home/kk998/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.2.3/swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "/home/kk998/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.2.3/swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,19 @@
+<mat-expansion-panel *ngIf="!!order">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            mslId: {{order.omsId}}
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+    <dl>
+        <dt>Details</dt>
+        <dd>factoryId: {{order.orderDetails.factoryId}}</dd>
+        <dd>factoryName: {{order.orderDetails.factoryName}}</dd>
+        <dd>factoryAddress: {{order.orderDetails.factoryAddress}}</dd>
+        <dd>factoryCountry: {{order.orderDetails.factoryCountry}}</dd>
+        <dd>productionLineId: {{order.orderDetails.productionLineId}}</dd>
+        <dd>productCode: {{order.orderDetails.productCode}}</dd>
+        <dd>productDescription: {{order.orderDetails.productDescription}}</dd>
+        <dd>poNumber: {{order.orderDetails.poNumber}}</dd>
+        <dd>expectedStartDate: {{order.orderDetails.expectedStartDate}}</dd>
+    </dl>
+</mat-expansion-panel>

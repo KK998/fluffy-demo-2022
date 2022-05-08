@@ -2,10 +2,10 @@
   <app-header headerName="Demo"></app-header>
   <div class="oms-app-container">
     <ng-container *ngIf="!loggedIn; else loggedInTemplate">
-      totaly not logged in
+      <app-form></app-form>
     </ng-container>
     <ng-template #loggedInTemplate>
-      totaly logged in
+      <app-order-listing></app-order-listing>
     </ng-template>
   </div>
   <app-footer></app-footer>
