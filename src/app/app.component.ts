@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'oms';
+  title: string = 'oms';
+  loggedIn: boolean = false
+
+  public setLoggedIn(state: boolean) {
+    this.loggedIn = state
+  }
 }
