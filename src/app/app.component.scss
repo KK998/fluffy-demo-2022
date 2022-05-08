@@ -6,4 +6,9 @@
     app-footer{
         margin-top: auto;
     }
+
+    .oms-app-container{
+        margin-top: var(--header-height);
+        padding: 2rem;
+    }
 }

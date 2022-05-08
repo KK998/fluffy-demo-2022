@@ -1,5 +1,12 @@
 <div class="oms-app">
   <app-header headerName="Demo"></app-header>
-
+  <div class="oms-app-container">
+    <ng-container *ngIf="!loggedIn; else loggedInTemplate">
+      totaly not logged in
+    </ng-container>
+    <ng-template #loggedInTemplate>
+      totaly logged in
+    </ng-template>
+  </div>
   <app-footer></app-footer>
 </div>
