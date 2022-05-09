@@ -1,0 +1,28 @@
+button.dark,
+button.light {
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 1;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: none;
+    transition: all .3s ease;
+    cursor: pointer;
+    border-radius: 4px;
+
+    &:hover {
+        box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.3);
+    }
+}
+
+button.dark {
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+button.light {
+    background-color: var(--light);
+    color: var(--dark);
+}

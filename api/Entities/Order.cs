@@ -3,8 +3,9 @@ namespace oms.Entities
   public class Order
   {
     public Guid orderId { get; init; }
-
     public DateTime createdDate { get; init; }
+    public DateTime? updatedDate { get; init; }
+    public DateTime? deletedDate { get; init; }
     public string? omsId { get; init; }
     public int? factoryId { get; init; }
     public string? factoryName { get; init; }

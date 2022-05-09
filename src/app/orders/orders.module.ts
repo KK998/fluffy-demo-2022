@@ -4,9 +4,10 @@ import { AddOrderComponent } from './add-order/add-order.component';
 import { OrderComponent } from './order/order.component';
 import { OrderListingComponent } from './order-listing/order-listing.component';
 import { MatExpansionModule } from "@angular/material/expansion"
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from "@angular/material/form-field"
 import { MatInputModule } from "@angular/material/input"
+import { SharedModule } from '../shared/shared.module';
 @NgModule({
   declarations: [
     AddOrderComponent,
@@ -21,9 +22,10 @@ import { MatInputModule } from "@angular/material/input"
   imports: [
     CommonModule,
     MatExpansionModule,
-    FormsModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
-    MatInputModule
+    MatInputModule,
+    SharedModule
   ]
 })
 export class OrdersModule { }

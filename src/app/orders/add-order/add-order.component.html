@@ -1,1 +1,17 @@
-<p>add-order works!</p>
+<form [formGroup]="order" (ngSubmit)="handleOrderCreate(order)" class="add-order-form">
+    <mat-form-field>
+        <input required id="omsId" formControlName="omsId" placeholder="omsId" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <input required id="gtin" formControlName="gtin" placeholder="gtin" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <input required id="serialNumbers" formControlName="serialNumbers" placeholder="serialNumbers" matInput>
+    </mat-form-field>
+    <mat-form-field>
+        <input required id="templateId" formControlName="templateId" placeholder="templateId" matInput>
+    </mat-form-field>
+    <app-button type="submit">
+        Create
+    </app-button>
+</form>

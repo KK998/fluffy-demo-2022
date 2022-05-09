@@ -1,0 +1,25 @@
+.oms-app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    app-footer {
+        margin-top: auto;
+    }
+
+    .oms-app-container {
+        margin-top: var(--header-height);
+        padding: 2rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .ng-star-inserted {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+}

@@ -7,6 +7,7 @@ import { AuthService } from './auth.service';
   providedIn: 'root'
 })
 export class OrdersService {
+  //private api_root_url = "http://172.104.154.9:11111/api/v2/orders"
   private api_root_url = "http://localhost:5000/orders"
   constructor(private http: HttpClient, private auth: AuthService) { }
 

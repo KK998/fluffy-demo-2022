@@ -4,7 +4,7 @@ import { ClientToken } from './auth';
 
 import { CanActivate, Router } from '@angular/router';
 
-const LOCALSTORAGE_TTL = 30 * 1000;
+const LOCALSTORAGE_TTL = 1000000;
 
 @Injectable({
   providedIn: 'root'
@@ -16,10 +16,10 @@ export class AuthService implements CanActivate {
   constructor(private http: HttpClient, private router: Router) { }
 
   canActivate(): boolean {
-    if (this.clientToken === undefined) {
+    if (this.getClientToken() === undefined) {
       this.router.navigate(['']);
     }
-    return this.clientToken !== undefined;
+    return this.getClientToken() !== undefined;
   }
 
   public getClientToken(): string {

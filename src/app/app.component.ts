@@ -7,18 +7,8 @@ import { AuthService } from './services/auth.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = 'oms';
-  loggedIn: boolean = false
-
-  constructor(private authService: AuthService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    if (this.authService.getClientToken()) {
-      this.setLoggedIn(true)
-    }
-  }
-
-  public setLoggedIn(state: boolean) {
-    this.loggedIn = state
   }
 }

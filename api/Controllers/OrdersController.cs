@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using oms.Entities;
-using oms.Repository;
+using oms.Repositories;
 
 namespace oms.Controllers
 {

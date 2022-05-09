@@ -1,18 +1,20 @@
-<form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)" class="login-form">
-    <h1 class="login-form-title">Login</h1>
-    <div class="login-form-fields">
-        <div class="error" *ngIf="errors">
-            Encountered errors with logging in.
+<app-layout>
+    <form #userlogin="ngForm" (ngSubmit)="onClickSubmit(userlogin.value)" class="login-form">
+        <h1 class="login-form-title">Login</h1>
+        <div class="login-form-fields">
+            <div class="error" *ngIf="errors">
+                Encountered errors with logging in.
+            </div>
+            <mat-form-field>
+                <input required name="email" autocomplete="username" matInput placeholder="Email" type="email" ngModel>
+            </mat-form-field>
+            <mat-form-field>
+                <input required name="password" autocomplete="current-password" matInput placeholder="Password"
+                    type="password" ngModel>
+            </mat-form-field>
         </div>
-        <mat-form-field>
-            <input required name="email" autocomplete="username" matInput placeholder="Email" type="email" ngModel>
-        </mat-form-field>
-        <mat-form-field>
-            <input required name="password" autocomplete="current-password" matInput placeholder="Password"
-                type="password" ngModel>
-        </mat-form-field>
-    </div>
-    <button class="login-form-submit" type="submit">
-        Login
-    </button>
-</form>
+        <button class="login-form-submit" type="submit">
+            Login
+        </button>
+    </form>
+</app-layout>

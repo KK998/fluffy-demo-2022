@@ -1,7 +1,4 @@
-using oms.Entities;
-
-
-namespace oms.Repository
+namespace oms.Repositories
 {
   public interface IRepository<T>
   {

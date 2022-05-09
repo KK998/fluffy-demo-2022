@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import { Order, OrderDetails, OrderProduct } from 'src/app/services/orders';
 import { OrdersService } from 'src/app/services/orders.service';
 
@@ -8,7 +9,13 @@ import { OrdersService } from 'src/app/services/orders.service';
   styleUrls: ['./add-order.component.scss']
 })
 export class AddOrderComponent implements OnInit {
-  fieldsWithErrors: Array<string> | null = null;
+  order = new FormGroup({
+    omsId: new FormControl(''),
+    gtin: new FormControl(''),
+    serialNumbers: new FormControl(''),
+    templateId: new FormControl(3)
+  })
+
   constructor(private orders: OrdersService) { }
 
   ngOnInit(): void {
@@ -50,12 +57,10 @@ export class AddOrderComponent implements OnInit {
   protected checkIfAllOrderDataPresent(data: Order): boolean {
     if (!data) return false;
     if (!data.products) {
-      this.fieldsWithErrors?.push("products");
       // Add more comprehensive check for each product item
       return false;
     }
     if (!data.orderDetails) {
-      this.fieldsWithErrors?.push("orderDetails");
       // Add more comprehensive check for each necessary orderDetails field
       return false;
     }

@@ -1,6 +1,6 @@
 using oms.Entities;
 
-namespace oms.Repository
+namespace oms.Repositories
 {
   public class InMemoryOrderItemsRepository : IRepository<OrderItem>
   {

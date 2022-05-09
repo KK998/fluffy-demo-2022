@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, ValidationErrors, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth.service';
 
 
@@ -12,7 +13,7 @@ type FieldErrors = ValidationErrors | null;
 })
 export class FormComponent implements OnInit {
   errors: FieldErrors = null
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, private router: Router) { }
 
   ngOnInit(): void {
   }
@@ -22,6 +23,7 @@ export class FormComponent implements OnInit {
     this.errors = control.errors
     if (obj.email && obj.password) {
       this.auth.setClientToken(obj.email, obj.password);
+      this.router.navigate(['/orders']);
     }
   }
 

@@ -1,25 +1,27 @@
-<div class="orders">
-    <div class="orders-toolbar">
-        <button class="orders-toolbar-btn" (click)="handleNewOrderClick()">
-            <ng-container *ngIf="!createOrderEnabled; else viewAllOrdersText">
-                Add new order
-            </ng-container>
-            <ng-template #viewAllOrdersText>
-                View all orders
-            </ng-template>
-        </button>
-    </div>
-    <ng-container *ngIf="createOrderEnabled; else viewOrders">
-        <app-add-order></app-add-order>
-    </ng-container>
-    <ng-template #viewOrders>
-        <ng-container *ngIf="!orders; else ordersListing">
-            No orders to show...
+<app-layout>
+    <div class="orders">
+        <div class="orders-toolbar">
+            <button class="orders-toolbar-btn" (click)="handleNewOrderClick()">
+                <ng-container *ngIf="!createOrderEnabled; else viewAllOrdersText">
+                    Add new order
+                </ng-container>
+                <ng-template #viewAllOrdersText>
+                    View all orders
+                </ng-template>
+            </button>
+        </div>
+        <ng-container *ngIf="createOrderEnabled; else viewOrders">
+            <app-add-order></app-add-order>
         </ng-container>
-        <ng-template #ordersListing>
-            <mat-accordion>
-                <app-order *ngFor="let order of orders" [order]="order"></app-order>
-            </mat-accordion>
+        <ng-template #viewOrders>
+            <ng-container *ngIf="!orders; else ordersListing">
+                No orders to show...
+            </ng-container>
+            <ng-template #ordersListing>
+                <mat-accordion>
+                    <app-order *ngFor="let order of orders" [order]="order"></app-order>
+                </mat-accordion>
+            </ng-template>
         </ng-template>
-    </ng-template>
-</div>
+    </div>
+</app-layout>

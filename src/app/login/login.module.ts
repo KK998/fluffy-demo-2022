@@ -4,6 +4,7 @@ import { FormComponent } from './form/form.component';
 import { MatFormFieldModule } from "@angular/material/form-field"
 import { MatInputModule } from "@angular/material/input"
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     MatFormFieldModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    SharedModule
   ]
 })
 export class LoginModule { }

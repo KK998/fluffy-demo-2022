@@ -1,12 +1,1 @@
-<div class="oms-app">
-  <app-header headerName="Demo"></app-header>
-  <div class="oms-app-container">
-    <ng-container *ngIf="!loggedIn; else loggedInTemplate">
-      <app-form></app-form>
-    </ng-container>
-    <ng-template #loggedInTemplate>
-      <app-order-listing></app-order-listing>
-    </ng-template>
-  </div>
-  <app-footer></app-footer>
-</div>
+<router-outlet></router-outlet>
